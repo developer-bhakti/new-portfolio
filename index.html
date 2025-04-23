@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaquery.css" />
+  </head>
+  <body>
+    <div class="background">
+      <header>
+        <nav id="navbar">
+          <div class="logo">Bhakti Purnale</div>
+          <ul class="nav-links">
+            <li><a href="#about" onclick="closeMenu()">About</a></li>
+            <li><a href="#experience" onclick="closeMenu()">Skills</a></li>
+            <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+          </ul>
+          <div class="hamburger" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+          </div>
+        </nav>
+      </header>
+
+      <section id="profile">
+        <div class="section-text">
+          <p class="text">Hey, there <span class="emoji">👋🏽</span></p>
+          <div class="hero-text">
+            <h1 class="title">
+              I'm <span>Bhakti Purnale</span> <br />
+              a Frontend Developer
+            </h1>
+            <p class="section-text-p3">
+              Focused on building clean, responsive, and intuitive web
+              applications that deliver exceptional user experiences.
+            </p>
+            <a href="./images/Bhakti_Purnale_Resume.pdf" download class="resume"
+              >Download Resume</a
+            >
+            <div class="social-container">
+              <a href="https://github.com/developer-bhakti" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/bhakti-purnale-98723b280?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="section-pic-container">
+          <img
+            src="./assets/bhakti.png"
+            alt="Tunde profile image"
+            mb="0"
+          />
+        </div>
+      </section>
+    </div>
+
+    <section id="about">
+      <h1 class="about-title fs-1 text-black pt-3">About Me</h1>
+      <div class="container">
+        <ul class="info">
+          <li>
+            <span class="first-block">Full Name:</span
+            ><span class="second-block">Bhakti Purnale</span>
+          </li>
+          <li>
+            <span class="first-block">Phone:</span
+            ><span class="second-block"
+              ><a href="tel:+918010715215">8010715215</a></span
+            >
+          </li>
+          <li>
+            <span class="first-block">Email:</span
+            ><span class="second-block"
+              ><a class="text-break" href="mailto:bhakti.purnale.dev@gmail.com"
+                >bhakti.purnale.dev@gmail.com</a
+              ></span
+            >
+          </li>
+        </ul>
+
+        <!-- <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./icons/experience.png"
+                alt="experience"
+                loading="lazy"
+                width="30"
+              />
+              <h3>Experience</h3>
+              <p>
+                1+ year <br />
+                Frontend Development
+              </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./icons/education.png"
+                alt="education"
+                loading="lazy"
+                width="30"
+              />
+              <h3>Education</h3>
+              <p>Diploma Degree in Web Development (at Aptech)</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Hey, I'm Bhakti Purnale — but you can call me Tunde. I'm a
+              passionate and detail-oriented Frontend Developer focused on
+              crafting responsive, user-centric web experiences. With a solid
+              foundation in HTML, CSS, Bootstrap, Tailwind CSS, JavaScript, and
+              React, I transform ideas into interactive digital solutions that
+              perform beautifully across all devices. I’m driven by clean
+              design, seamless functionality, and continuous learning. <br />
+              Let’s connect and bring something amazing to life!
+            </p>
+          </div>
+        </div>
+      </div> -->
+    </section>
+
+    <section id="experience">
+      <h1 class="experience-title fs-1 text-black pt-3">
+        My Skills And Expertise
+      </h1>
+      <div class="container py-5">
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card text-center p-3">
+              <i class="fab fa-html5 fa-3x text-danger"></i>
+              <h3 class="mt-3">HTML</h3>
+              <p class="card-text">
+                Crafting well-structured and semantic HTML for clean,
+                accessible, and scalable layouts.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card text-center p-3">
+              <i class="fab fa-css3-alt fa-3x text-primary"></i>
+              <h3 class="mt-3">CSS</h3>
+              <p class="card-text">
+                Designing visually stunning and responsive layouts using modern
+                CSS methodologies.
+              </p>
+            </div>
+          </div>
+          <!-- <div class="col-md-6 col-lg-4">
+            <div class="card text-center p-3">
+              <i class="fab fa-bootstrap fa-3x" style="color: #7952b3"></i>
+              <h3 class="mt-3">Bootstrap</h3>
+              <p class="card-text">
+                Leveraging Bootstrap to build fast, responsive, and mobile-first
+                web designs effortlessly.
+              </p>
+            </div>
+          </div> -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card text-center p-3" style="align-items: center">
+              <img
+                src="./icons/tailwindcss-icon-svgrepo-com.svg"
+                alt=""
+                width="55"
+              />
+              <h3 class="mt-3">TailwindCSS</h3>
+              <p class="card-text">
+                Leveraging TailwindCSS to build fast, responsive, and
+                mobile-first web designs effortlessly.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card text-center p-3">
+              <i class="fab fa-js-square fa-3x text-warning"></i>
+              <h3 class="mt-3">JavaScript</h3>
+              <p class="card-text">
+                Bringing websites to life with dynamic interactions and
+                optimized JavaScript logic.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card text-center p-3">
+              <i class="fab fa-react fa-3x text-info"></i>
+              <h3 class="mt-3">React</h3>
+              <p class="card-text">
+                Building scalable, high-performance UI components with React
+                while mastering state management.
+              </p>
+            </div>
+          </div>
+          <!-- <div class="col-md-6 col-lg-4">
+            <div class="card text-center p-3">
+              <i class="fab fa-git-alt fa-3x text-danger"></i>
+              <h3 class="mt-3">Git</h3>
+              <p class="card-text">
+                Mastering version control with Git to streamline code management
+                and team collaboration.
+              </p>
+            </div>
+          </div> -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card text-center p-3">
+              <i class="fab fa-github fa-3x text-dark"></i>
+              <h3 class="mt-3">GitHub</h3>
+              <p class="card-text">
+                Utilizing GitHub for seamless collaboration, version control,
+                and professional project showcasing.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="projects-heading">
+        <h1 class="fs-1 text-black pt-3">My Projects</h1>
+      </div>
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6">
+            <div class="project-card">
+              <img
+                src="./assets/coffee.png"
+                alt="Project 1"
+                loading="lazy"
+                class="img-fluid"
+              />
+              <div class="project-info">
+                <h3>Coffee Shop</h3>
+                <p>
+                  This Starbucks-inspired website is built using HTML, CSS, and
+                  JavaScript, featuring a sleek and modern design. ☕✨ With
+                  dynamic animations, smooth interactions, and a responsive
+                  layout, it provides an immersive coffee shopping experience.
+                  The dark-themed UI enhances the visual appeal, while
+                  interactive elements make navigation seamless. 🚀 Users can
+                  explore menu items, learn about coffee, and engage with the
+                  brand effortlessly. Let me know your thoughts and suggestions!
+                </p>
+                <p class="tech-stack">
+                  <span>Tech Stack:</span> HTML | CSS | JAVASCRIPT
+                </p>
+                <div class="project-links">
+                  <a
+                    href="https://developer-bhakti.github.io/coffee-animation/"
+                    target="_blank"
+                    >View projects</a
+                  >
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="project-card">
+              <img
+                src="./assets/hospital.png"
+                alt="Project 2"
+                loading="lazy"
+                class="img-fluid"
+              />
+              <div class="project-info">
+                <h3>Hospital Appoinment</h3>
+                <p>
+                  This hospital website is built using HTML, CSS, and
+                  JavaScript, offering a clean and responsive design for a
+                  seamless user experience. 🏥✨ It includes features like
+                  appointment booking, doctor profiles, service details, and
+                  contact information. 📅💉 The interactive UI ensures easy
+                  navigation, while JavaScript enhances dynamic elements for
+                  better functionality. 🚀 With a professional layout and smooth
+                  animations, this project helps patients access healthcare
+                  services effortlessly.
+                </p>
+                <p class="tech-stack">
+                  <span>Tech Stack:</span> HTML | CSS | JAVASCRIPT
+                </p>
+                <div class="project-links">
+                  <a
+                    href="https://developer-bhakti.github.io/hospital-management/"
+                    target="_blank"
+                    >View projects</a
+                  >
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="project-card">
+              <img
+                src="./assets/punelocation.png"
+                alt="Project 3"
+                loading="lazy"
+                class="img-fluid"
+              />
+              <div class="project-info">
+                <h3>Pune Best Locations</h3>
+                <p>
+                  "Pune Best Location Search" is a web application designed to
+                  help users discover the best places in Pune with ease. 🏙️📍
+                  Whether you're looking for top food spots, historic temples,
+                  vibrant shopping markets, or iconic landmarks, this tool
+                  provides detailed locations along with map navigation. 🗺️✨
+                  Built using HTML, CSS, and JavaScript, it ensures a seamless
+                  experience for both locals and visitors. 🚀 Explore Pune
+                  effortlessly and never miss out on its hidden gems! 🌟
+                </p>
+                <p class="tech-stack">
+                  <span>Tech Stack:</span> HTML | CSS | JAVASCRIPT |
+                </p>
+                <div class="project-links">
+                  <a
+                    href="https://developer-bhakti.github.io/pune-highlights/"
+                    target="_blank"
+                    >View projects</a
+                  >
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="project-card">
+              <img
+                src="./assets/food.png"
+                alt="Project 4"
+                loading="lazy"
+                class="img-fluid"
+              />
+              <div class="project-info">
+                <h3>Food Recipe</h3>
+                <p>
+                  Built using React, Tailwind CSS, and a public API,
+                   this web application allows users to effortlessly search for food recipes. 
+                   With a responsive design and a user-friendly interface,
+                    the app delivers relevant recipes based on user input through a 
+                    dynamic search feature. Whether you're a casual cook or a kitchen enthusiast,
+                     this project makes discovering new dishes simple and fun.
+                 
+                </p>
+                <p class="tech-stack">
+                  <span>Tech Stack:</span> REACT | Tailwind CSS
+                </p>
+                <div class="project-links">
+                  <a href="https://skywings-gamma.vercel.app/" target="_blank"
+                    >View projects</a
+                  >
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="project-card">
+              <img
+                src="./assets/starbucks.png"
+                alt="Project 5"
+                loading="lazy"
+                class="img-fluid"
+              />
+              <div class="project-info">
+                <h3>Starbucks</h3>
+                <p>
+                  Presenting my Starbucks website! ☕✨ Built with HTML for
+                  structure, CSS for stylish design, and JavaScript for dynamic
+                  animations and responsiveness. 🚀 This project brings the
+                  Starbucks experience to life with smooth interactions and a
+                  modern look. Check it out and share your feedback! 💚
+                </p>
+                <p class="tech-stack">
+                  <span>Tech Stack:</span> HTML | CSS | JAVASCRIPT
+                </p>
+                <div class="project-links">
+                  <a
+                    href="https://developer-bhakti.github.io/starbucks/"
+                    target="_blank"
+                    >View projects</a
+                  >
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="project-card">
+              <img
+                src="./assets/ageCalculater.png"
+                alt="Project 6"
+                loading="lazy"
+                class="img-fluid"
+              />
+              <div class="project-info">
+                <h3>Age Calculator</h3>
+                <p>
+                  an Age Calculator built with HTML, CSS, and JavaScript! 🎉
+                  This simple yet powerful tool lets you calculate your exact age in just seconds.
+                   Just enter your birth date, and it instantly tells you your age down to the day!
+                  Perfect for birthdays, milestones, or just satisfying your curiosity. Check it out! 🧠📅
+                </p>
+                <p class="tech-stack">
+                  <span>Tech Stack:</span> HTML | CSS | JAVASCRIPT
+                </p>
+                <div class="project-links">
+                  <a
+                    href="https://dental-care-three-brown.vercel.app/"
+                    target="_blank"
+                    >View projects</a
+                  >
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="project-card">
+              <img
+                src="./assets/gemini.png"
+                alt="Project 7"
+                loading="lazy"
+                class="img-fluid"
+              />
+              <div class="project-info">
+                <h3>Gemini</h3>
+                <p>
+                  Gemini, built using React, Tailwind CSS, and APIs! 💡
+                  This smart application takes user input and responds with relevant answers,
+                   delivering an interactive and dynamic experience. Whether you're asking questions 
+                   or exploring ideas, Gemini is designed to give accurate and meaningful responses in real time! 🔍💬
+                </p>
+                <p class="tech-stack">
+                  <span>Tech Stack:</span> Tailwind CSS | REACT | API
+                </p>
+                <div class="project-links">
+                  <a
+                    href="https://voice-recorder-chi.vercel.app/"
+                    target="_blank"
+                    >View projects</a
+                  >
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="project-card">
+              <img
+                src="./assets/inter.png"
+                alt="Project 8"
+                loading="lazy"
+                class="img-fluid"
+              />
+              <div class="project-info">
+                <h3>Weather</h3>
+                <p>
+                  
+                </p>
+                <p class="tech-stack">
+                  <span>Tech Stack:</span> HTML | CSS | JAVASCRIPT
+                </p>
+                <div class="project-links">
+                  <a
+                    href=""
+                    target="_blank"
+                    >View projects</a
+                  >
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact-container">
+        <h1 class="contact-title">Contact</h1>
+        <form
+          class="contact-form"
+          action="https://formsubmit.co/bhakti.purnale.dev@gmail.com"
+          method="POST"
+        >
+          <div class="form-row">
+            <input
+              name="fname"
+              id="fname"
+              type="text"
+              class="contact-input"
+              placeholder="Your firstname"
+              required
+            />
+            <input
+              name="lname"
+              id="lname"
+              type="text"
+              class="contact-input"
+              placeholder="Your lastname"
+              required
+            />
+          </div>
+          <div class="form-row">
+            <input
+              name="phone"
+              id="phone"
+              type="text"
+              class="contact-input"
+              placeholder="Your phone number"
+              required
+            />
+            <input
+              name="email"
+              id="email"
+              type="email"
+              class="contact-input"
+              placeholder="Your email address"
+              required
+            />
+          </div>
+          <input
+            name="subject"
+            id="subject"
+            type="text"
+            class="contact-input contact-subject"
+            placeholder="Your subject of this message"
+            required
+          />
+          <textarea
+            class="contact-textarea"
+            placeholder="Your message"
+            required
+          ></textarea>
+          <button type="submit" class="contact-button">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container footer-container">
+        <div>
+          <h2>Bhakti Purnale</h2>
+          <p>Frontend Developer | React Developer | Web Developer</p>
+        </div>
+
+        <div class="social-container">
+          <a href="https://github.com/developer-bhakti " target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/bhakti-purnale-98723b280?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
+            "
+            target="_blank"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+        </div>
+      </div>
+
+      <p class="footer-bar">
+        &copy; 2025 Bhakti Purnale. All rights reserved.
+      </p>
+    </footer>
+
+    <button id="scrollToTop"><i class="fa-solid fa-arrow-up"></i></button>
+  </body>
+</html>
